@@ -1,4 +1,4 @@
-1, In the main folder, run ionic serve
+1, In the main folder, run ionic serve \n
 2, In the django folder, run python manage.py makemigrations
 3, run python manage.py migrates
 4, run python manage.py runserver
