@@ -1,0 +1,29 @@
+ <ion-header>
+    <ion-navbar color="dark">
+     <ion-title>
+       Top Rated!
+     </ion-title>
+   </ion-navbar>
+ </ion-header>
+ 
+ <ion-content padding>
+       <ion-grid text-center>
+ 
+    <ion-card *ngFor="let article of topTen"> 
+         <div class="menu-header">
+       <ion-card *ngFor="let items of article" padding-top padding-bottom>
+               <ion-row>
+                       <ion-col width-30>
+                               {{items.rating}}
+                       </ion-col>
+
+                       <ion-col width-70>
+                               {{items.name}}
+                       </ion-col>
+               </ion-row>
+       </ion-card>
+        </div>
+    </ion-card>
+  </ion-grid>
+ 
+ </ion-content>

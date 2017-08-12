@@ -1,0 +1,16 @@
+{
+  "name": "ix-luncher",
+  "app_id": "92962892",
+  "type": "ionic-angular",
+   "proxies": [
+    {
+      "path": "/menu",
+      "proxyUrl": "https://ix-luncher-api.appspot.com"
+    },
+     {
+      "path": "/food",
+      "proxyUrl": "https://ix-luncher-api.appspot.com/"
+    }  
+  ]
+}
+

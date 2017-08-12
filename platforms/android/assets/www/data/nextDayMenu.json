@@ -1,0 +1,44 @@
+{  
+  "date": "2017-06-02",
+  "title": "BAR BE QUE",
+  "caterer": "New fOod people",
+  "location": "Wingold 74",
+  "menu": [
+    {
+      "rating": 4,
+      "userRating" : 0,
+      "flag": "Halal",
+      "title": "Fried Chicken",
+      "description": "Red meat with green sauce",
+      "cal": 480,
+      "picURL": "http://www.pachd.com/free-images/food-images/chinese-food-01.jpg"
+    },
+     {
+      "rating": 1,
+      "userRating" : 0,
+      "flag": "Halal",
+      "title": "Fried Beef",
+      "description": "Pulled Beef",
+      "cal": 480,
+      "picURL": "http://www.pachd.com/free-images/food-images/dinner-table-02.jpg"
+    },
+     {
+      "rating": 2,
+      "userRating" : 0,
+      "flag": "Halal",
+      "title": "Friend Vege",
+      "description": "Just broccli",
+      "cal": 480,
+      "picURL": "http://www.pachd.com/free-images/food-images/paella-01.jpg"
+    },
+    {
+      "rating": 2,
+      "userRating" : 0,
+      "flag": "Halal",
+      "title": "Fried Salad",
+      "description": "Only green leaves",
+      "cal": 480,
+      "picURL": "http://www.pachd.com/free-images/food-images/dessert-02.jpg"
+    }
+  ]
+}
