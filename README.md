@@ -1,7 +1,7 @@
-1, In the main folder, run ionic serve \n
-2, In the django folder, run python manage.py makemigrations
-3, run python manage.py migrates
-4, run python manage.py runserver
+1, In the main folder, run ionic serve. This will open up a test web app <br />
+2, In the django folder, run python manage.py makemigrations to update the schmas <br />
+3, run python manage.py migrates to update the database <br />
+4, run python manage.py runserver to start the RESTFUL API<br />
 
 
-Make sure DB setting are set up correctly
+Make sure DB setting are set up correctly <br />
