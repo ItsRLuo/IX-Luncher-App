@@ -4,4 +4,4 @@
 4, run python manage.py runserver to start the RESTFUL API<br />
 
 
-Make sure DB setting are set up correctly <br />
+Make sure DB setting are set up correctly under settings.py <br />
