@@ -84,36 +84,36 @@ WSGI_APPLICATION = 'lunch.wsgi.application'
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
 
-if os.getenv('SERVER_SOFTWARE', '').startswith('Google App Engine'):
+#if os.getenv('SERVER_SOFTWARE', '').startswith('Google App Engine'):
     # Running on production App Engine, so connect to Google Cloud SQL using
     # the unix socket at /cloudsql/<your-cloudsql-connection string>
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.mysql',
-            'HOST': '/cloudsql/ix-luncher-api:us-central1:ix-luncher-api-sql',
-            'NAME': 'djangodb',
-            'USER': 'root',
-            'PASSWORD': 'admin123456',
-        }
-    }
+#    DATABASES = {
+#        'default': {
+#            'ENGINE': 'django.db.backends.mysql',
+#            'HOST': '/cloudsql/ix-luncher-api:us-central1:ix-luncher-api-sql',
+#            'NAME': 'djangodb',
+#            'USER': 'root',
+#            'PASSWORD': 'admin123456',
+#        }
+#    }
 
-elif os.getenv('SETTINGS_MODE') == 'prod':
+#elif os.getenv('SETTINGS_MODE') == 'prod':
 
-     DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.mysql',
-            'HOST': '35.188.5.121',
-            'NAME': 'djangodb',
-            'USER': 'root',
-            'PASSWORD': 'admin123456',
-        }
-    }
-
-
-else:
+ #    DATABASES = {
+ #       'default': {
+ #           'ENGINE': 'django.db.backends.mysql',
+ #            'HOST': '35.188.5.121',
+ #           'NAME': 'djangodb',
+ #           'USER': 'root',
+ #           'PASSWORD': 'admin123456',
+ #       }
+ #   }
 
 
-    DATABASES = {
+#else:
+
+
+DATABASES = {
              # 'default': {
              #     'ENGINE': 'django.db.backends.mysql',
              #     'NAME': 'IXluncher',
@@ -121,20 +121,20 @@ else:
              #     'HOST': 'localhost'
              # },
 
-        'default': {
-              'ENGINE': 'django.db.backends.sqlite3',
-              'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-        }
+	'default': {
+	     'ENGINE': 'django.db.backends.sqlite3',
+	     'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+	}
 
-            # 'default': {
-            #     'ENGINE': 'django.db.backends.mysql',
-            #     'HOST': '127.0.0.1',
-            #     'PORT': '3306',
-            #     'NAME': 'ix-luncher',
-            #     'USER': 'root',
-            #     'PASSWORD': 'admin123456',
-            # }
-    }
+	# 'default': {
+	#  'ENGINE': 'django.db.backends.mysql',
+	#  'HOST': 'localhost',
+	#  #'PORT': '3306',
+	#  'NAME': 'ix-luncher',
+	#  'USER': 'root',
+	#  'PASSWORD': 'admin123456',
+	# }
+}
 
 
 # Password validation
