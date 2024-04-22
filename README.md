@@ -5,3 +5,6 @@
 
 
 Make sure DB setting are set up correctly under settings.py <br />
+
+
+Alternatively, git checkout local and follow 1-4 to run in the local DB <br />
